@@ -5,12 +5,15 @@
   "dependencies": {
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
-    "react-scripts": "1.1.4"
+    "react-scripts": "1.1.4",
+    "superagent": "^3.8.3"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy:gen-cname": "echo \"consuming-react-apis-demo.surge.sh\" > build/CNAME",
+    "deploy" : "npm run build && npm run deploy:gen-cname && surge build/"
   }
 }

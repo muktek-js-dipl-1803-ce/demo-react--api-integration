@@ -3,11 +3,11 @@ import React, { Component } from 'react';
 class User extends Component {
   render() {
     return (
-      <div className="user-card" data-id="berenice" data-gender="female">
-        <img src="https://randomuser.me/api/portraits/women/11.jpg"/>
-        <h5>Beverly</h5>
-        <h6>NZ</h6>
-        <ion-icon name="close"></ion-icon>
+      <div className="user-card" data-id={this.props.userId}>
+        <img src={this.props.userImg}/>
+        <h5>{this.props.userName}</h5>
+        <h6>{this.props.userNat}</h6>
+        <ion-icon name="close" ></ion-icon>
       </div>
     );
   }
