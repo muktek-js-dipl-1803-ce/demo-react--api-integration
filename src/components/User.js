@@ -7,6 +7,7 @@ class User extends Component {
         <img src="https://randomuser.me/api/portraits/women/11.jpg"/>
         <h5>Beverly</h5>
         <h6>NZ</h6>
+        <ion-icon name="close"></ion-icon>
       </div>
     );
   }

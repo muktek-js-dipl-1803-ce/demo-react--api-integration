@@ -36,8 +36,20 @@ small{
   margin: 1rem;
   padding: 1rem;
   border: 1px solid #333;
+  position: relative;
 }
 
 img{ display: block; width: 100%; border-radius: 50%; border: 1px solid #999;}
 h5 {margin: .5rem 0 .25rem;}
 h6{ margin: .25rem 0; font-weight: 200;}
+
+.user-card [name="close"]{
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: firebrick;
+  font-size: 2rem;
+  border-bottom: 1px solid #333;
+  border-left: 1px solid #333;
+
+}
